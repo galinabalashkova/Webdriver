@@ -48,7 +48,7 @@ public class OnlinerPrivate extends BaseTest {
 		logger.step(13);
 		opf.submit1();
 		logger.step(14);
-		opf.nickname();
+		opf.nickname(loginprivate);
 		logger.step(15);
 		opf.pm();
 		logger.step(16);
