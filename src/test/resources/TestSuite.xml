@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Demo Test Plan" verbose="1">
+<parameter name="usernameparam"  value="galinastorm"/>
+<parameter name="passwordparam"  value="qwerty"/>
+<parameter name="usernameprivate"  value="Spring_Storm"/>	
+	<test name="Functional Tests" preserve-order="true">
+		<classes>
+ 			<class name="onliner.test.OnlinerSort" /> 
+ 			<class name="onliner.test.OnlinerLoginTwo"/>
+ 			<class name="onliner.test.OnlinerSearchCatalog" /> 
+ 			<class name="onliner.test.OnlinerSearchBaraholka" /> 
+ 			<class name="onliner.test.OnlinerSearchForum"/>  
+ 			<class name="onliner.test.OnlinerRules"/> 
+ 			<class name="onliner.test.OnlinerMeteo"/>
+ 			<class name="onliner.test.OnlinerParametr"/> 		
+ 			<class name="onliner.test.OnlinerLogin"/>  	 
+ 			<class name="onliner.test.OnlinerPrivate" />
+ 			
+ 			
+        </classes>
+	</test>
+</suite>
