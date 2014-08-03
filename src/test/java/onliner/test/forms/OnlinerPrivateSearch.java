@@ -18,7 +18,7 @@ public class OnlinerPrivateSearch extends BaseForm {
 	private TextBox head = new TextBox(By.id("compose_subject"), "head");
 	private TextBox textfield = new TextBox(By.id("compose_text"), "text");
 	private Button send = new Button(By.xpath("//button[@type = 'submit']"), "send");
-	
+	private Button forum = new Button(By.xpath("//a[@href='http://forum.onliner.by/']"),"forum");
 	private TextBox login = new TextBox(By.name("username"),"name");
 	private TextBox passwordclick = new TextBox(By.xpath("//input[@class = 'input unfocus password']"), "password");
 	private TextBox password = new TextBox(By.xpath("//input[@class = 'input password']"), "password");
@@ -31,6 +31,10 @@ public class OnlinerPrivateSearch extends BaseForm {
 		users.click();
 	}
 	
+	public void forum() {
+		forum.click();
+	}
+	
 	public void Nicknameen(String text) {
 		nicknameent.type(text);
 	}
@@ -40,7 +44,7 @@ public class OnlinerPrivateSearch extends BaseForm {
 	}
 	
 	public void nickname(String text) {
-		private Button nickname = new Button(By.linkText(text),"Userprivate");
+		Button nickname = new Button(By.linkText(text),"Userprivate");
 		nickname.click();
 	}
 	

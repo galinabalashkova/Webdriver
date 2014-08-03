@@ -37,7 +37,7 @@ public class OnlinerPrivate extends BaseTest {
 		logger.step(8);
 		osf.assertlogin();			
 		logger.step(9);
-		browser.navigate("http://forum.onliner.by/");
+		osf.forum();
 		logger.step(10);
 		OnlinerPrivateSearch opf = new OnlinerPrivateSearch();
 		logger.step(11);
