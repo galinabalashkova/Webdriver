@@ -11,7 +11,7 @@ public class OnlinerPrivateSearch extends BaseForm {
 	private static String formlocator="//body['data-twttr-rendered']";
 	
 	private Button users = new Button(By.linkText("Пользователи"), "Users");
-	private Button nickname = new Button(By.xpath("//a[@href='https://profile.onliner.by/user/346859']"),"Spring_Storm");
+	private Button nickname = new Button(By.xpath("//td[@class='user']"),"Userprivate");
 	private Button pm = new Button(By.linkText("Написать сообщение"), "pm");
 	private Button enter = new Button(By.xpath("//input[@name = 'search']"), "search");
 	private TextBox nicknameent = new TextBox(By.xpath("//input[@name = 'name']"), "enternickname");
